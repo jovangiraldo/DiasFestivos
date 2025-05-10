@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiFestivos.Aplicacion", "a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiFestivos.Presentacion", "apiFestivos.Presentacion\apiFestivos.Presentacion.csproj", "{5099B615-4372-4B2F-9603-989D5DDCD249}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFestivos.test", "ApiFestivos.test\ApiFestivos.test.csproj", "{291FD548-2C5A-4226-8278-4E8203FFE567}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5099B615-4372-4B2F-9603-989D5DDCD249}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5099B615-4372-4B2F-9603-989D5DDCD249}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5099B615-4372-4B2F-9603-989D5DDCD249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291FD548-2C5A-4226-8278-4E8203FFE567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291FD548-2C5A-4226-8278-4E8203FFE567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291FD548-2C5A-4226-8278-4E8203FFE567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291FD548-2C5A-4226-8278-4E8203FFE567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

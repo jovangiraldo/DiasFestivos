@@ -16,6 +16,9 @@ bld/
 *.userosscache
 *.sln.docstates
 
+# Visual Studio
+.vs/
+
 # Mono Auto Generated Files
 mono_crash.*
 
