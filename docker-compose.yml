@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  apifestivos:
+    container_name: apifestivos
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5235:5235"  # Cambia si tu app escucha en otro puerto
+    environment:
+      - ASPNETCORE_URLS=http://+:5235
+      - ConnectionStrings__Festivos=Server=dockerbdfestivos;Database=Festivos;User Id=sa;Password=Jocg12345;TrustServerCertificate=true;
+    networks:
+      - red
+
+networks:
+  red:
+    external: true
+    
