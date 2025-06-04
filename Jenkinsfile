@@ -20,35 +20,34 @@ pipeline {
 
         stage('Construir contenedores') {
             steps {
-                bat 'docker-compose build'
+                bat 'docker compose build'
             }
         }
 
         stage('Detener contenedores previos (opcional)') {
             steps {
-                bat 'docker-compose down || exit 0'
+                bat 'docker compose down || exit 0'
             }
         }
 
         stage('Levantar servicios') {
             steps {
-                bat 'docker-compose up -d'
+                bat 'docker compose up -d'
             }
         }
 
         stage('Verificar que SQL está corriendo') {
             steps {
                 bat 'docker ps'
-                // Si quieres validar por nombre:
+                // Puedes validar por nombre si lo deseas:
                 // bat 'docker inspect dockerbdfestivos'
             }
         }
 
-        // Puedes agregar más etapas aquí, por ejemplo:
         stage('Pruebas (opcional)') {
             steps {
                 echo 'Aquí podrías ejecutar pruebas unitarias o de integración si las tienes.'
-                // bat 'dotnet test ./path/a/test/proyecto.csproj'
+                // bat 'dotnet test ./ApiFestivos.test/ApiFestivos.test.csproj'
             }
         }
     }
