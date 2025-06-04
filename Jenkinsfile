@@ -32,6 +32,7 @@ pipeline {
 
         stage('Levantar servicios') {
             steps {
+                bat 'docker ps -a -q -f name=apifestivos | findstr . && docker rm -f apifestivos || echo "No existing container"'
                 bat 'docker compose up -d'
             }
         }
@@ -39,7 +40,7 @@ pipeline {
         stage('Verificar que SQL está corriendo') {
             steps {
                 bat 'docker ps'
-                // Puedes validar por nombre si lo deseas:
+                // También puedes verificar por nombre o puerto:
                 // bat 'docker inspect dockerbdfestivos'
             }
         }
