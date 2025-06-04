@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiFestivos.Presentacion", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFestivos.test", "ApiFestivos.test\ApiFestivos.test.csproj", "{291FD548-2C5A-4226-8278-4E8203FFE567}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FestivosApp", "FestivosApp", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mssql", "mssql", "{3508D3C7-35F2-4791-A3D2-8DF297A6018B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{9F76D362-9B0C-4293-97C9-3E95E3FC1C6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +54,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3508D3C7-35F2-4791-A3D2-8DF297A6018B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9F76D362-9B0C-4293-97C9-3E95E3FC1C6A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D99E3F7B-C24E-41DD-A680-16E0E980DA55}
